@@ -7,23 +7,17 @@ namespace SMP.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("SlimusSword");
-			Tooltip.SetDefault("This is a modded sword.");
+			DisplayName.SetDefault("Slimus Sword");
+			Tooltip.SetDefault("It feels mysterious and legendary, and it's a little slimy...");
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 50;
-			item.melee = true;
-			item.width = 40;
-			item.height = 40;
-			item.useTime = 20;
-			item.useAnimation = 20;
-			item.useStyle = 1;
-			item.knockBack = 6;
+			item.CloneDefaults(ItemID.Seaweed);
 			item.value = 10000;
-			item.rare = 2;
-			item.UseSound = SoundID.Item1;
-			item.autoReuse = true;
+			item.rare = -12;
+			item.maxStack = 1;
+			item.shoot = mod.ProjectileType("Nothing for the moment");
+			item.buffType = mod.BuffType("Nothing for the moment");
 		}
 
 		public override void AddRecipes()
