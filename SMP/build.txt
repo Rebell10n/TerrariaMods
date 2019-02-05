@@ -1,0 +1,3 @@
+author = Salt Chaos
+version = 0.1
+displayName = So Much Pets
