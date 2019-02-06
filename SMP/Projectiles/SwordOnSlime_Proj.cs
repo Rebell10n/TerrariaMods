@@ -2,12 +2,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ExampleMod.Projectiles.Pets
+namespace SwordOnSlime_Proj.Projectiles.Pets
 {
-	public class ExamplePet : ModProjectile
+	public class SwordOnSlime_Proj : ModProjectile
 	{
 		public override void SetStaticDefaults() {
-			// DisplayName.SetDefault("Paper Airplane"); // Automatic from .lang files
 			Main.projFrames[projectile.type] = 4;
 			Main.projPet[projectile.type] = true;
 		}
