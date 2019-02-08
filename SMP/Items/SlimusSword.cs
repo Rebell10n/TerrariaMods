@@ -16,8 +16,8 @@ namespace SMP.Items
 			item.value = 10000;
 			item.rare = -12;
 			item.maxStack = 1;
-			item.shoot = mod.ProjectileType("Nothing for the moment");
-			item.buffType = mod.BuffType("Nothing for the moment");
+			item.shoot = mod.ProjectileType("SwordOnSlime_Proj");
+			item.buffType = mod.BuffType("SwordOnSlime_Buff");
 		}
 
 		public override void AddRecipes()
