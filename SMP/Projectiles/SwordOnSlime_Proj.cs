@@ -24,7 +24,7 @@ namespace SwordOnSlime_Proj.Projectiles.Pets
 
 		public override void AI() {
 			Player player = Main.player[projectile.owner];
-			ExamplePlayer modPlayer = player.GetModPlayer<ExamplePlayer>();
+			PPlayer modPlayer = player.GetModPlayer<PPlayer>();
 			if (player.dead) {
 				modPlayer.SwordOnSlime_Proj = false;
 			}
