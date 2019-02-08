@@ -12,7 +12,7 @@ namespace SwordOnSlime_Proj.Projectiles.Pets
 		}
 
 		public override void SetDefaults() {
-			projectile.CloneDefaults(ProjectileID.ZephyrFish);
+			projectile.CloneDefaults(ProjectileID.EyeSpring);
 			aiType = ProjectileID.EyeSpring;
 		}
 
