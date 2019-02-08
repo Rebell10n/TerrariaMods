@@ -24,11 +24,11 @@ namespace SwordOnSlime_Proj.Projectiles.Pets
 
 		public override void AI() {
 			Player player = Main.player[projectile.owner];
-			PPlayer modPlayer = player.GetModPlayer<PPlayer>();
+			ExamplePlayer modPlayer = player.GetModPlayer<ExamplePlayer>();
 			if (player.dead) {
-				modPlayer.SwordOnSlime_Proj = false;
+				modPlayer.examplePet = false;
 			}
-			if (modPlayer.SwordOnSlime_Proj) {
+			if (modPlayer.examplePet) {
 				projectile.timeLeft = 2;
 			}
 		}
