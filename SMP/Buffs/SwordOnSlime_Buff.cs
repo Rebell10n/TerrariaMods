@@ -3,7 +3,7 @@ using Terraria.ModLoader;
 
 namespace SwordOnSlime.Buffs
 {
-	public class SwordOnSlime : ModBuff
+	public class SwordOnSlime_Buff : ModBuff
 	{
 		public override void SetDefaults() {
 			DisplayName.SetDefault("Legendary Sword and Slime");
