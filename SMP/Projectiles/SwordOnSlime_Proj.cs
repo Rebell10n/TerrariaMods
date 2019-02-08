@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace SwordOnSlime_Proj.Projectiles.Pets
+namespace SMP.Projectiles
 {
 	public class SwordOnSlime_Proj : ModProjectile
 	{
