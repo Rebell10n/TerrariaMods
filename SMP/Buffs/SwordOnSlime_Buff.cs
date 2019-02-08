@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace SwordOnSlime.Buffs
+namespace SMP.Buffs
 {
 	public class SwordOnSlime_Buff : ModBuff
 	{
