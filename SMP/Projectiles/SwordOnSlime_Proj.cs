@@ -7,18 +7,18 @@ namespace SwordOnSlime_Proj.Projectiles.Pets
 	public class SwordOnSlime_Proj : ModProjectile
 	{
 		public override void SetStaticDefaults() {
-			Main.projFrames[projectile.type] = 4;
+			Main.projFrames[projectile.type] = 2;
 			Main.projPet[projectile.type] = true;
 		}
 
 		public override void SetDefaults() {
 			projectile.CloneDefaults(ProjectileID.ZephyrFish);
-			aiType = ProjectileID.ZephyrFish;
+			aiType = ProjectileID.EyeSpring;
 		}
 
 		public override bool PreAI() {
 			Player player = Main.player[projectile.owner];
-			player.zephyrfish = false; // Relic from aiType
+			player.eyespring = false; // Relic from aiType
 			return true;
 		}
 
@@ -26,9 +26,9 @@ namespace SwordOnSlime_Proj.Projectiles.Pets
 			Player player = Main.player[projectile.owner];
 			ExamplePlayer modPlayer = player.GetModPlayer<ExamplePlayer>();
 			if (player.dead) {
-				modPlayer.examplePet = false;
+				modPlayer.SwordOnSlime_Proj = false;
 			}
-			if (modPlayer.examplePet) {
+			if (modPlayer.SwordOnSlime_Proj) {
 				projectile.timeLeft = 2;
 			}
 		}
